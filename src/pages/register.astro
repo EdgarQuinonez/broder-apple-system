@@ -2,14 +2,18 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Register">
-  <h1>Register</h1>
-  <p>Already have an account? <a href="/signin">Sign in</a></p>
+<Layout title="Crear una cuenta">
+  <h1>Crear una cuenta</h1>
   <form action="/api/auth/register" method="post">
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" />
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password" />
-    <button type="submit">Register</button>
+    <div>
+      <label for="email">Correo</label>
+      <input type="email" name="email" id="email" />
+      <label for="password">Contraseña</label>
+      <input type="password" name="password" id="password" />
+    </div>
+    <div>
+      <button>Crear cuenta</button>
+      <button type="submit">Registrarse</button>
+    </div>
   </form>
 </Layout>
